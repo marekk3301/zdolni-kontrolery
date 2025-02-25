@@ -14,6 +14,7 @@ button.pull = digitalio.Pull.UP
 while True:
     if not button.value:  # Sprawdzamy czy przycisk jest wciśnięty
         led.value = True  # Jeśli jest to włączamy led
+        print("click") # i wypisujemy informacje w terminalu
     else:
         led.value = False  # Jeśli nie to wyłączamy
     time.sleep(0.1)  # zatrzymujemy się na sekundę żeby przycisk lepiej działał
