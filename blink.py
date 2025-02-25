@@ -2,6 +2,7 @@ import time
 import board
 import digitalio
 
+# Dioda LED
 led = digitalio.DigitalInOut(board.LED) 
 led.direction = digitalio.Direction.OUTPUT
 
